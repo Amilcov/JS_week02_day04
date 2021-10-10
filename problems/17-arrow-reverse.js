@@ -13,6 +13,8 @@ let result3 = arrowReverseString("potato"); // returns "otatop"
 ***********************************************************************/
 
 // your code here!
+let arrowReverseString = (str) => str.split("").reverse().join("");
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 

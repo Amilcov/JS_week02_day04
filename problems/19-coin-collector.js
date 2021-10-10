@@ -26,6 +26,19 @@ Example 3:
 ***********************************************************************/
 
 // your code here
+let coinCollector = (numCoins) => {
+    let coins = [];
+    let num = numCoins;
+  
+    return function (coin) {
+        num--;
+        coins.push(coin);
+        if (num === 0) { 
+             return coins;
+        }
+        
+    }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

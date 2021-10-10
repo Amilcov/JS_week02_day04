@@ -43,6 +43,19 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // your code here
+let curriedSum = (numArgs) => {
+    let num = numArgs;
+    let sum = 0;
+
+    return function (elem) {
+       sum += elem;
+       num--;
+       if (num === 0) {
+         return sum;
+       }  
+    }
+
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
