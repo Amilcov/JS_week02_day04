@@ -20,11 +20,12 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 // your code here!
 let sandwichMaker = () => {
 
-  let sandwichOrder = "tomato";
+  let sandwich = "One sandwich with tomato";
 
-  return function(str) {
-    sandwichOrder += ' and ' + str;
-    console.log("One sandwich with " + sandwichOrder);
+  return function(ingredient) {
+    sandwich += ' and ' +ingredient;
+    console.log(sandwich);
+    return sandwich;
   }
 
 }

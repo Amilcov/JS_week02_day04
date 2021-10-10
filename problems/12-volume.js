@@ -27,14 +27,18 @@ console.log(table2(75)); // STILL prints 6
 // your code here
 let recVolume = (height) => {
     let volume = height;
+    let no = 1;
 
-    return function(width) {
-       volume *= width;
+    return function(dim) {
 
-       return (length) => {
-          volume *= length;
-          return volume;
-       }
+      if(no < 3) {
+        no++;
+        volume *= dim;
+      } 
+      if (no === 3){
+        return volume;
+      }  
+       
     }
 
 }
