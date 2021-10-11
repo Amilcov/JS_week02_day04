@@ -46,18 +46,20 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 let curriedSum = (numArgs) => {
     let numbers = []
     
-    let _curriedSum = (elem) => {
+    function _curriedSum(elem) {
       
        if (numbers.length < numArgs) {
           numbers.push(elem);
-          return _curriedSum; 
+       } 
+
+       if (numbers.length === numArgs){
+          return numbers.reduce((acc,e) => acc + e);
        } else {
-         return numbers.reduce(function(acc,e) {return acc+ e},0);
+          return _curriedSum;
        }
 
-
     }
-
+  return _curriedSum;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
