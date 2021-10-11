@@ -39,7 +39,7 @@ let countDownTimer = (n) => {
         if (counter === 0) {
            return 'Happy New Year!'
         } else {  
-        return counter;
+            return counter;
         }
 
       }
